@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="#0c0c0c">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOP RATED MOVIES"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topmoviesinrecyclerview"
+            android:layout_marginTop="15dp"
+            android:background="#0b0a0a">
+
+        </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TOP GROSSED MOVIES"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/topgrossedmoviesinrecyclerview"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+                </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="UPCOMING MOVIES"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/upcomingMovies"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POPULAR ACTRESSES"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popularactresses"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="POPULAR ACTORS"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popularactors"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+            </android.support.v7.widget.RecyclerView>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

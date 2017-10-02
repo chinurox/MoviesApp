@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:background="#1a1818">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#1c1b1b">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageviewformovieposter"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:background="#0c0c0c">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/titleofmovie"
+                android:textSize="25dp"
+                android:text="Bahuballi the beginning"
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="fill_horizontal|center_vertical"
+                android:textColor="#ffffff"
+                android:layout_gravity="left"
+                android:paddingLeft="20dp"
+                android:textIsSelectable="false" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#cdcdcd"
+                    android:src="@drawable/timer"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:id="@+id/timertime"
+                    android:textColor="#fcfcfc"
+                    android:textSize="20dp"
+                    android:text="jkjk"
+                    android:layout_gravity="center_vertical"
+                    android:foregroundGravity="center_vertical|center|center_horizontal"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/categorymovietype"
+                android:text="hjhj"
+                android:gravity="center_horizontal"
+                android:textSize="25dp"
+                android:textColor="#fefefe" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <RatingBar
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:id="@+id/ratingbar"/>
+
+            </LinearLayout>
+
+            <com.example.gargc.cinemalyticsmoviesapp.customview.Circulartextview
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="0.10"
+                android:text="11"
+                android:id="@+id/circularviewforrating"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:background="#f6ef20"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

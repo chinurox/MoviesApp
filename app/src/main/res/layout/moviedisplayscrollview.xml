@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:expandableTextView="http://schemas.android.com/tools"
+    android:background="@color/viewBg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:background="#0c0c0c">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRAILER"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/videoViewForTrailer"
+
+                android:background="#050505" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SYNOPSIS"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/sample" />
+
+                <com.example.gargc.cinemalyticsmoviesapp.customview.ExpandableTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/synopsis"
+                    android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAST"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cast"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+                </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SONGS"
+                android:background="#090808"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:layout_marginTop="15dp" />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/songs1"
+                android:layout_marginTop="15dp"
+                android:background="#0b0a0a">
+            </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
